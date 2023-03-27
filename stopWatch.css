@@ -1,0 +1,120 @@
+body {
+    background-color: #2169bb;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+p {
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+#rnd {
+    margin-top: -25px;
+    font-size: 25px;
+    color: rgb(196, 196, 196);
+    position: relative;
+}
+
+.rndAnim {
+    position: relative;
+    animation: slide .5s ease-out;
+}
+
+@keyframes slide {
+    from {
+        top: 14px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+.counOpac {
+    position: relative;
+    animation: opac 1.7s infinite;
+}
+
+@keyframes opac {
+    0% {
+        opacity: .9;
+    }
+
+    50% {
+        opacity: .25;
+    }
+}
+
+div {
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #2169bb;
+    background-color: white;
+}
+
+#date {
+    width: 100px;
+    font-size: 16px;
+    position: absolute;
+    top: -80px;
+    right: 20px;
+}
+
+@media screen and (max-width : 805px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    div {
+        flex-wrap: wrap;
+    }
+
+    button {
+        flex-grow: 4;
+        margin: 8px;
+
+    }
+}
+
+@media screen and (max-width : 512px) {
+    h1 {
+        font-size: 16px;
+        margin-bottom: -40px;
+    }
+
+    #coun {
+        font-size: 40px;
+    }
+
+    #rnd {
+        font-size: 20px;
+    }
+
+    #date {
+        width: 100px;
+        font-size: 12px;
+        right: 0px;
+    }
+}
