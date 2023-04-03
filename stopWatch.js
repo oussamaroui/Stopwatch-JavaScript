@@ -17,8 +17,6 @@ let start = document.getElementById("start"),
     timerHr,
     timerMin,
     timerSec;
-
-
 setInterval(function () { date.innerHTML = new Date().toLocaleString() }, 1000);
 
 start.onclick = function () {
