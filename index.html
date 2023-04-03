@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stopWatch.css">
-    <title>Stopwatch</title>
+    <title>Stopwatch JS</title>
 </head>
 
 <body>
     <p id="date"></p>
     <h1>Stopwatch JAVASCRIPT</h1>
-    <p id="coun"><span id="counter1">00</span>:<span id="counter2">00</span></p>
+    <p id="coun">
+        <span id="counter0" style="display: none;">00</span>
+        <span id="counter1">00</span>:
+        <span id="counter2">00</span>
+    </p>
     <article id="art">
         <p id="rnd"></p>
     </article>
@@ -22,6 +26,13 @@
         <button id="round">Round</button>
         <button id="reset">Reset</button>
     </div>
+    <table cellspacing="0" id="tab" style="display: none;">
+        <tr>
+            <th class="tabNum">Number</th>
+            <th class="tabRound">Round</th>
+            <th class="tabTime">Time</th>
+        </tr>
+    </table>
 </body>
 <script src="stopWatch.js"></script>
 
