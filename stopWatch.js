@@ -1,7 +1,6 @@
 let start = document.getElementById("start"),
     stopp = document.getElementById("stop"),
     round = document.getElementById("round"),
-    reset = document.getElementById("reset"),
     coun = document.getElementById("coun"),
     counter0 = document.getElementById("counter0"),
     counter1 = document.getElementById("counter1"),
@@ -108,19 +107,6 @@ round.onclick = function () {
     }
 }
 
-reset.onclick = function () {
-    hr = 0;
-    min = 0;
-    sec = 0;
-    counter0.innerHTML = hr;
-    counter1.innerHTML = min;
-    counter2.innerHTML = sec;
-    clearInterval(timerHr);
-    clearInterval(timerMin);
-    clearInterval(timerSec);
-    coun.classList.remove("counOpac")
-    counter0.style.display = 'none';
-}
 
 
 
